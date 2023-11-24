@@ -8,8 +8,8 @@ To implement the given logic function verify its operation in Quartus using Veri
  F1= A’B’C’D’+AC’D’+B’CD’+A’BCD+BC’D
  
 ## Equipments Required:
-## Hardware – PCs, Cyclone II , USB flasher
-## Software – Quartus prime
+Hardware – PCs, Cyclone II , USB flasher
+Software – Quartus prime
 
 
 ## Theory:
@@ -50,7 +50,6 @@ A combinational circuit is a circuit in which the output depends on the present 
 
 ## Program:
 ```
-
 module telex(A,B,C,D,F);
 input A,B,C,D;
 output F;
@@ -62,15 +61,14 @@ assign x4=(~A)&(B)&(C)&(D);
 assign x5=(B)&(~C)&(D);
 assign F=x1|x2|x3|x4|x5;
 endmodule
-
 ```
-## RTL realization
+## RTL realization:
 ![image](https://github.com/Nidhish055/Experiment--02-Implementation-of-combinational-logic-/assets/145979818/a2cc54fb-fb2f-4721-aff3-5743b330338c)
 
-##Truth Table:
+## Truth Table:
 ![image](https://github.com/Nidhish055/Experiment--02-Implementation-of-combinational-logic-/assets/145979818/dbb4303c-01fb-46fb-bccf-78215dd05fbe)
 
-## Timing Diagram
+## Timing Diagram:
 ![image](https://github.com/Nidhish055/Experiment--02-Implementation-of-combinational-logic-/assets/145979818/1e17b7c4-fb65-4022-834e-5d570545cd35)
 
 ## Result:
