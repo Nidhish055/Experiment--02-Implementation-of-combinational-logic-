@@ -49,6 +49,8 @@ A combinational circuit is a circuit in which the output depends on the present 
 *Give the Input Combinations according to the Truth Table amd then simulate the Output waveform
 
 ## Program:
+```
+
 module telex(A,B,C,D,F);
 input A,B,C,D;
 output F;
@@ -59,8 +61,9 @@ assign x3=(~B)&(C)&(~D);
 assign x4=(~A)&(B)&(C)&(D);
 assign x5=(B)&(~C)&(D);
 assign F=x1|x2|x3|x4|x5;
-endmodule 
+endmodule
 
+```
 ## RTL realization
 ![image](https://github.com/Nidhish055/Experiment--02-Implementation-of-combinational-logic-/assets/145979818/a2cc54fb-fb2f-4721-aff3-5743b330338c)
 
